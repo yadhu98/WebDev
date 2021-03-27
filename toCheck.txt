@@ -1,0 +1,6 @@
+The Descendant Selectors:
+Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to <em> element only when it lies inside <ul> tag.
+
+ul em {
+   color: #000000; 
+}
