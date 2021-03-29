@@ -3,13 +3,13 @@
     <head>  
         <meta charset="utf-8">
          <style>
-            table,th,tr,td{
+            /* table,th,tr,td{
                 
                 
                  border: 4px solid #C00; 
-                 /* border-collapse : collapse;                */
+                 border-collapse : collapse;               
                  
-            }
+            } */
             /* h1{
                 color: blue;
                 /* border-collapse: collapse; */
@@ -30,24 +30,34 @@
                 border: 4px solid red;
                  border-collapse: collapse; 
             } */
+            #cell {
+                border: 4px solid blue;
+                /* border-collapse: collapse; */
+            }
+            .celltwo {
+                border: 4px solid red;
+            }
+            .cellthree {
+                border: 4px solid green;
+            }
 
         </style> 
     </head>
     <body>
         <h1>Heylo</h1>
-        <table style="  width: 100%">
+        <table class="celltwo" style="  width: 100%">
             <tr>
                 <th>Name</th>
                 <th>Phone Number</th>
             </tr>
-            <tr style="border: 4px solid blue;border-collapse: collapse;">
-                <td style="border: 4px solid blue;border-collapse: collapse;">A</td>
-                <td style="border: 4px solid blue;border-collapse: collapse;">89989898</td>
+            <tr id="cell">
+                <td id="cell">A</td>
+                <td id="cell">89989898</td>
                 
             </tr>
-            <tr>
-                <td>B</td>
-                <td>98565695</td>
+            <tr class="cellthree">
+                <td class="cellthree">B</td>
+                <td class="cellthree">98565695</td>
             </tr>
 
         </table>
